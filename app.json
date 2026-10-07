@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "NovaBank",
+    "slug": "novabank",
+    "scheme": "novabank",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./img/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#FFFFFF",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.novira.novabank"
+    },
+    "android": {
+      "package": "com.novira.novabank",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./img/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "CAMERA",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./img/icon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./img/logo2.jpg",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "NovaBank usa tu cámara para verificar tu identidad con Face ID y para leer códigos QR y el código de tu DNI.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "NovaBank usa Face ID para desbloquear tu cuenta rápidamente."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NovaBank usa tus fotos para leer un código QR guardado en tu galería."
+        }
+      ]
+    ]
+  }
+}
