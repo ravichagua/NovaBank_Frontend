@@ -1,0 +1,16 @@
+import React from 'react';
+import { Image, ImageStyle, StyleProp } from 'react-native';
+
+// logo1 = marca compacta, usada en toda la app (encabezados, tarjetas, login…)
+// logo2 = versión completa con el nombre, reservada para el splash / bienvenida.
+const logo1 = require('../../img/logo1.jpg');
+const logo2 = require('../../img/logo2.jpg');
+
+export function MarcaLogo({ size = 40, style }: { size?: number; style?: StyleProp<ImageStyle> }) {
+  return <Image source={logo1} style={[{ width: size, height: size, resizeMode: 'contain' }, style]} />;
+}
+
+export function LogoCompleto({ width = 240, style }: { width?: number; style?: StyleProp<ImageStyle> }) {
+  const height = width * (1024 / 1536);
+  return <Image source={logo2} style={[{ width, height, resizeMode: 'contain' }, style]} />;
+}
