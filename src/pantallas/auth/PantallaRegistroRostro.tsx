@@ -32,8 +32,6 @@ export default function PantallaRegistroRostro() {
 
 
   useEffect(() => {
-
-    nav.replace('RegisterDone');
     if (etapa !== 'scanning') return;
     escaneoY.setValue(0);
     const bucle = Animated.loop(

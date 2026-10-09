@@ -22,9 +22,13 @@
       "predictiveBackGestureEnabled": false,
       "softwareKeyboardLayoutMode": "resize",
       "permissions": [
-        "CAMERA",
-        "SCHEDULE_EXACT_ALARM",
-        "USE_EXACT_ALARM"
+        "android.permission.CAMERA",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.CAMERA",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -63,6 +67,11 @@
           "photosPermission": "NovaBank usa tus fotos para leer un código QR guardado en tu galería."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "56ac7dd2-c3db-44a7-b07e-37ec1530100b"
+      }
+    }
   }
 }

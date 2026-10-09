@@ -50,7 +50,7 @@ export default function PantallaBienvenida() {
         </View>
 
         <View style={{ gap: 11 }}>
-          <BotonDorado label={t('welcome.createAccount')} onPress={() => nav.navigate('Register')} />
+          <BotonDorado label={t('welcome.createAccount')} onPress={() => nav.navigate('DniCapture')} />
           <BotonFantasma
             label={t('welcome.haveAccount')}
             onPress={() => nav.navigate('Login')}
